@@ -1,0 +1,24 @@
+/*             rs.c        */
+/* This program is an encoder/decoder for Reed-Solomon codes. Encoding is in
+   systematic form, decoding via the Berlekamp iterative algorithm.
+   In the present form , the constants mm, nn, tt, and kk=nn-2tt must be
+   specified  (the double letters are used simply to avoid clashes with
+   other n,k,t used in other programs into which this was incorporated!)
+   Also, the irreducible polynomial used to generate GF(2**mm) must also 
+
+   The code is not written in the most elegant way, but to the best
+   of my knowledge, (no absolute guarantees!), it works.
+   However, when including it into a simulation program, you may want to do
+   some conversion of global variables (used here because I am lazy!) to
+   local variables where appropriate, and passing parameters (eg array
+   addresses) to the functions  may be a sensible move to reduce the number
+   of global variables and thus decrease the chance of a bug being introduced.
+
+   The code is not written in the most elegant way, but to the best
+   of my knowledge, (no absolute guarantees!), it works.
+   However, when including it into a simulation program, you may want to do
+   some conversion of global variables (used here because I am lazy!) to
+   local variables where appropriate, and passing parameters (eg array
+   addresses) to the functions  may be a sensible move to reduce the number
+   of global variables and thus decrease the chance of a bug being introduced.
+*/
